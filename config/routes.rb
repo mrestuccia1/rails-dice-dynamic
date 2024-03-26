@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get('/', { :controller => "roll", :action => "home"})
+  get('/', { :controller => "roll", :action => "index"})
 
-  get('/:rolls/:sides', { :controller => "roll", :action => "execute"})
+  get('/dice/:rolls/:sides', { :controller => "roll", :action => "execute"})
 end
